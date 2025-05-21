@@ -1,0 +1,40 @@
+From 80c985dbb88037cc4824a78085b4371cc3b5f1df Mon Sep 17 00:00:00 2001
+From: nm <zxcnmqqw@gmail.com>
+Date: Thu, 22 May 2025 02:11:19 +0300
+Subject: [PATCH 2/2] add division
+
+---
+ calculator.cpp | 5 +++++
+ calculator.h   | 3 ++-
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index 7e4c545..f9d72f2 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -14,3 +14,8 @@ int Calculator::Mul (double a, double b)
+ {
+     return a * b + 0.5;
+ }
++double Calculator::Div (double a, double b)
++{
++    return a / b;
++}
++
+diff --git a/calculator.h b/calculator.h
+index fdf5ddd..3ea7252 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -6,7 +6,8 @@ class Calculator
+     public:
+         int Add (double, double);
+         int Sub (double, double);
+-        int Mul (double, double);
++int Div (double, double); 
++       int Mul (double, double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.49.0.windows.1
+
